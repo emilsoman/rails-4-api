@@ -1,4 +1,4 @@
-rails-4-api
+Rails 4 API
 ===========
 
 [![Build Status](https://travis-ci.org/emilsoman/rails-4-api.png)](https://travis-ci.org/emilsoman/rails-4-api)
