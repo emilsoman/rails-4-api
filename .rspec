@@ -1,0 +1,4 @@
+--color
+--format progress
+--format html
+--out tmp/rspec.html
