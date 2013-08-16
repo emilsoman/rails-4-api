@@ -13,3 +13,11 @@ This is a template Rails 4 app which has the following to start with :
 3. Cucumber for integration testing + up-to-date API documentation
 4. Versioning using the "Accept" header
 5. Does not depend on cookies/session.( In simple words, the API client need not be a browser )
+
+## Getting started
+
+    cd rails-4-api
+    bundle install --without production
+    bundle exec rake #Build ( RSpec + Cucumber )
+    #open public/api_doc.html in your browser
+
