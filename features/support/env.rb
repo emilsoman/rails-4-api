@@ -5,6 +5,17 @@
 # files.
 
 require 'cucumber/rails'
+require 'cucumber/api_steps'
+require "json_spec/cucumber"
+
+#For json_spec
+def last_json
+  page.source
+end
+
+And "debugger" do
+  require 'debugger'; debugger
+end
 
 # Capybara defaults to XPath selectors rather than Webrat's default of CSS3. In
 # order to ease the transition to Capybara we set the default here. If you'd
