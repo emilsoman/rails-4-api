@@ -1,0 +1,20 @@
+language: ruby
+
+rvm:
+  - 1.9.3
+  - 2.0.0
+
+bundler_args: "--without development production"
+
+env:
+  - DB=sqlite
+  - DB=mysql
+  - DB=postgresql
+
+script:
+  - RAILS_ENV=test bundle exec rake db:create
+  - RAILS_ENV=test bundle exec rake db:migrate:reset --trace
+  - bundle exec rake
+
+before_script:
+  - cp config/database.travis.yml config/database.yml
