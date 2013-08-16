@@ -8,8 +8,6 @@ bundler_args: "--without development production"
 
 env:
   - DB=sqlite
-  - DB=mysql
-  - DB=postgresql
 
 script:
   - RAILS_ENV=test bundle exec rake db:create
