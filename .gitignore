@@ -15,3 +15,5 @@
 /log/*.log
 /tmp
 /features.html
+/libpeerconnection.log
+/public/api_doc.html
