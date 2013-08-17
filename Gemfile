@@ -4,10 +4,6 @@ gem 'rails', '4.0.0'
 gem 'rails-api' #Rails on API mode
 
 gem 'sqlite3', group: [:development, :test]# Use sqlite3 as the database for Active Record
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
 gem 'warden', '1.2.3'
 gem 'devise'
 gem 'cancan' #For authorization

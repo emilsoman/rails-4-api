@@ -96,7 +96,6 @@ GEM
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
     orm_adapter (0.4.0)
-    pg (0.16.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -113,11 +112,6 @@ GEM
       actionpack (>= 3.2.11)
       railties (>= 3.2.11)
       tzinfo (~> 0.3.31)
-    rails_12factor (0.0.2)
-      rails_serve_static_assets
-      rails_stdout_logging
-    rails_serve_static_assets (0.0.1)
-    rails_stdout_logging (0.0.1)
     railties (4.0.0)
       actionpack (= 4.0.0)
       activesupport (= 4.0.0)
@@ -199,10 +193,8 @@ DEPENDENCIES
   devise
   factory_girl_rails
   json_spec
-  pg
   rails (= 4.0.0)
   rails-api
-  rails_12factor
   rspec-rails
   sass-rails (~> 4.0.0.rc1)
   sdoc
