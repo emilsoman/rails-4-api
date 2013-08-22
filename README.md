@@ -18,6 +18,7 @@ This is a template Rails 4 app which has the following to start with :
 
     cd rails-4-api
     bundle install --without production
+    RAILS_ENV=test bundle exec rake db:setup #Setup the test DB
     bundle exec rake #Build ( RSpec + Cucumber )
     #open public/api_doc.html in your browser
     
