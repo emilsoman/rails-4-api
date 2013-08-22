@@ -4,7 +4,7 @@ Feature: Sign Up
       Given I send and accept JSON
 
     Scenario: Successful sign up
-      When I send a POST request to "/api/users" with the following:
+      When I send a POST request to "/api/v1/users" with the following:
       """
       {
         "user" : {
@@ -31,7 +31,7 @@ Feature: Sign Up
 
 
     Scenario: Passwords do not match
-      When I send a POST request to "/api/users" with the following:
+      When I send a POST request to "/api/v1/users" with the following:
       """
       {
         "user" : {
@@ -51,7 +51,7 @@ Feature: Sign Up
 
     Scenario: Email is already taken
       Given "Adam" is a user with email id "user@gmail.com" and password "password123"
-      When I send a POST request to "/api/users" with the following:
+      When I send a POST request to "/api/v1/users" with the following:
       """
       {
         "user" : {

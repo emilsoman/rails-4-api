@@ -12,7 +12,7 @@ Feature: List Users
         |13|user4@gmail.com |Fourth     |User       |test1234 |auth_token_423      |user |
         |14|user5@gmail.com |Fifth      |User       |test1234 |auth_token_523      |admin|
       When I authenticate as the user "auth_token_523" with the password "random string"
-      And I send a GET request to "/api/users"
+      And I send a GET request to "/api/v1/users"
       And the JSON response should be:
       """
       {
@@ -56,7 +56,7 @@ Feature: List Users
         |13|user4@gmail.com |Fourth     |User       |test1234 |auth_token_423      |user |
         |14|user5@gmail.com |Fifth      |User       |test1234 |auth_token_523      |admin|
       When I authenticate as the user "auth_token_123" with the password "random string"
-      And I send a GET request to "/api/users"
+      And I send a GET request to "/api/v1/users"
       Then the response status should be "403"
       And the JSON response should be:
       """
@@ -65,7 +65,7 @@ Feature: List Users
 
     Scenario: User is not authenticated
       When I authenticate as the user "invalid_auth_token" with the password "random string"
-      And I send a GET request to "/api/users"
+      And I send a GET request to "/api/v1/users"
       Then the response status should be "401"
       And the JSON response should be:
       """
