@@ -1,7 +1,7 @@
 Rails 4 API
 ===========
 
-[![Build Status](https://travis-ci.org/emilsoman/rails-4-api.png)](https://travis-ci.org/emilsoman/rails-4-api)
+[![Build Status](https://travis-ci.org/emilsoman/rails-4-api.png?branch=url-version)](https://travis-ci.org/emilsoman/rails-4-api)
 
 After I published my blog post on [Building a Tested, Documented and Versioned JSON API Using Rails 4](http://www.emilsoman.com/blog/2013/05/18/building-a-tested/),
 many readers asked me for a sample template app. So here it is. Feel free to send in pull requests.
